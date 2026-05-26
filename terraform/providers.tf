@@ -17,11 +17,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "tf-state-jordprojs"
-    key            = "aws-backup-system/dev.terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "tf-state-locks"
-    encrypt        = true
+    bucket       = "tf-state-jordprojs"
+    key          = "aws-backup-system/dev.terraform.tfstate"
+    region       = "us-east-1"
+    use_lockfile = true
+    encrypt      = true
   }
 }
 
