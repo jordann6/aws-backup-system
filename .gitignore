@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform.lock.hcl
+terraform/lambda_function.zip
+
+# Diagram
+__pycache__/
+*.pyc
