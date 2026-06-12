@@ -1,5 +1,7 @@
 # AWS Automated Backup System
 
+[![Validate](https://github.com/jordann6/aws-backup-system/actions/workflows/validate.yml/badge.svg)](https://github.com/jordann6/aws-backup-system/actions/workflows/validate.yml)
+
 Terraform-managed AWS infrastructure that provisions an S3 backup bucket with automated daily verification via Lambda and EventBridge Scheduler. Uses IAM execution roles for keyless authentication, S3 versioning for point-in-time recovery, and tiered lifecycle management to minimize storage costs.
 
 ## Architecture
